@@ -1,16 +1,12 @@
 # coding: utf-8
-#  -------- World --------------
+#  -------- Week 1 Hackathon Challenge: Continent Counter --------------
 import random
 M = 'land'
 o = 'water'
 world = []
-x = ""
-y = ""
-a = 0
-b = 0
 
 def create_world(world_size):
-    for w in range(0,world_size):
+    for w in range(0, world_size):
         row = []
         i = 0
         while i < world_size:
@@ -34,7 +30,6 @@ def check_size_create(world_size):
         check_size_create(world_size)
 
 check_size_create(world_size)
-print(world)
 
 def continent_counter(world, x, y):
     #print(str(x) + str(y) + str(a) + str(b))
@@ -60,25 +55,25 @@ def continent_counter(world, x, y):
     size = size + continent_counter(world, x+1, y+1)
     return size
 
-x_coordinate = int(input('What "x" coordinate would you like to land on? You must choose a number between 0 and ' + str(world_size - 1) + ":  "))
+x_coordinate = int(input('What "x" coordinate would you like to land on? You must choose a number between 0 and ' + str(world_size) + ":  "))
 
 def check_x(world_size, x_coordinate):
-    if x_coordinate >= 0 and x_coordinate < world_size:
+    if x_coordinate >= 0 and x_coordinate <= world_size:
         return x_coordinate
     else:
-        x_coordinate = int(input('What "x" coordinate would you like to land on? You must choose a number between 0 and ' + str(world_size - 1) + ":  "))
+        x_coordinate = int(input('What "x" coordinate would you like to land on? You must choose a number between 0 and ' + str(world_size) + ":  "))
         check_x(world_size, x_coordinate)
 
 check_x(world_size, x_coordinate)
 a = x_coordinate
 
-y_coordinate = int(input('What "y" coordinate would you like to land on? You must choose a number between 0 and ' + str(world_size - 1) + ":  "))
+y_coordinate = int(input('What "y" coordinate would you like to land on? You must choose a number between 0 and ' + str(world_size) + ":  "))
 
 def check_y(world_size, y_coordinate):
-    if y_coordinate >= 0 and y_coordinate < world_size:
+    if y_coordinate >= 0 and y_coordinate <= world_size:
         return y_coordinate
     else:
-        y_coordinate = int(input('What "y" coordinate would you like to land on? You must choose a number between 0 and ' + str(world_size - 1) + ":  "))
+        y_coordinate = int(input('What "y" coordinate would you like to land on? You must choose a number between 0 and ' + str(world_size) + ":  "))
         check_y(world_size, y_coordinate)
 
 check_y(world_size, y_coordinate)
@@ -89,7 +84,7 @@ your_continent = continent_counter(world, a, b)
 print(a)
 print(b)
 
-print("The size of the continent you landed on is: " + str(your_continent) + " hectares")
+print("The size of the continent you landed on at coordinates (" + str(a) + ", " + str(b) + ") is: " + str(your_continent) + " hectares")
 
 
 # worldtest1 = [
