@@ -27,12 +27,12 @@ print("Andrea Visanoiu​ is " + str(andreea_age_yrs) + " years old.")
 
 # Full name greeting. Write a program that asks for a person’s first name, then middle, and then last. Finally, it should greet the person using their full name.
 
-# first_name = ""
-# middle_name = ""
-# last_name = ""
-# first_name = input("What is your first name?")
-# middle_name = input("What is your middle name?")
-# last_name = input("What is your last name?")
-# print("It's lovely to meet you " + first_name + " " + middle_name + " " + last_name + "!")
+first_name = ""
+middle_name = ""
+last_name = ""
+first_name = input("What is your first name?")
+middle_name = input("What is your middle name?")
+last_name = input("What is your last name?")
+print("It's lovely to meet you " + first_name + " " + middle_name + " " + last_name + "!")
 
 # Bigger, better favorite number. Write a program that asks for a person’s favorite number. Have your program add 1 to the number, and then suggest the result as a bigger and better favorite number. (Do be tactful about it, though.)
