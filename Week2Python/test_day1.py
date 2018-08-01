@@ -16,6 +16,6 @@ class TestMoo(unittest.TestCase):
 
 class TestAlice(unittest.TestCase):
     def test0(self):
-        self.assertEqual(hw.check_chr(hw.lc_alice_test, hw.alphabet_count_test), [['a', 4], ['b', 2], ['c', 4], ['d', 2], ['e', 8], ['f', 0], ['g', 4], ['h', 0], ['i', 2], ['j', 2], ['k', 0], ['l', 2], ['m', 0], ['n', 2], ['o', 2], ['p', 2], ['q', 0], ['r', 4], ['s', 4], ['t', 4], ['u', 2], ['v', 0], ['w', 0], ['x', 0], ['y', 0], ['z', 0]])
+        self.assertEqual(hw.check_chr(hw.lc_alice_test, hw.alphabet_count_test), [['a', 2], ['b', 1], ['c', 2], ['d', 1], ['e', 4], ['f', 0], ['g', 2], ['h', 0], ['i', 1], ['j', 1], ['k', 0], ['l', 1], ['m', 0], ['n', 1], ['o', 1], ['p', 1], ['q', 0], ['r', 2], ['s', 2], ['t', 2], ['u', 1], ['v', 0], ['w', 0], ['x', 0], ['y', 0], ['z', 0]])
 
 unittest.main()
