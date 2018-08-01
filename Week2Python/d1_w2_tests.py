@@ -1,9 +1,9 @@
 import unittest
-
 from day1 import moo
 # from homework_week2 import alphabet_setup
-import homework_week2
-hw = homework_week2
+
+import soc_wk2_cert_debra_cupitt
+hw = soc_wk2_cert_debra_cupitt
 
 class TestMoo(unittest.TestCase):
 

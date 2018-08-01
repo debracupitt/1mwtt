@@ -1,15 +1,15 @@
 # ========== DAY 2 WEEK 2 =========================
-# ------- char() method ---------------------------
-# HOMEWORK: Make a function that prints A-Z & a-z
-# print(chr(65))
-# # > 'A'
-# def print_alphabet():
-#     for i in range(65,65+26):
-#         print(i, " stands for ", chr(i))
-#     for i in range(97,97+26):
-#         print(i, " stands for ", chr(i))
-#
-# print_alphabet()
+------- char() method ---------------------------
+HOMEWORK: Make a function that prints A-Z & a-z
+print(chr(65))
+# > 'A'
+def print_alphabet():
+    for i in range(65,65+26):
+        print(i, " stands for ", chr(i))
+    for i in range(97,97+26):
+        print(i, " stands for ", chr(i))
+
+print_alphabet()
 
 # HOMEWORK: Make a function that asks the user for a message, and turns it into a list of numbers (a cypher)
 # secret_message = input("What is the secret message you would like to send?")
