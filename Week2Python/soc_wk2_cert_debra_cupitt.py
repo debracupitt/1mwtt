@@ -249,16 +249,17 @@ print("The size of the continent you landed on at coordinates (" + str(x_fnl) + 
 
 
 
-# ================ DAY 3 HOMEWORK  ================================ #
+# ====================== DAY 3 HOMEWORK  ================================ #
 # Modify "a" for another name in my_dict. Hint: you will have to create a new key-value pair, copy in the value, and then delete the old one.
 
+my_dict = {
+    "a": 35000,
+    "b": 8000,
+    "z": 450
+}
 
-
-
-
-
-
-
+my_dict["d"] = my_dict["a"]
+del my_dict["a"]
 
 
 # -----------------------------------------------------------------------------

@@ -1,82 +1,34 @@
 # -*- coding: utf-8 -*-
-# python scrapy library
-M = 'land'
-o = 'water'
 
-world = [
-            [o,o,o,o,o,o,o,o,o,o,o],
-            [o,o,o,M,M,o,o,M,o,o,o],
-            [o,M,o,o,o,o,o,M,M,M,o],
-            [o,o,o,o,o,o,M,M,o,o,o],
-            [o,M,M,M,o,o,o,M,o,o,o],
-            [M,M,M,M,M,M,o,o,o,o,o],
-            [o,M,o,M,o,o,o,M,o,M,o],
-            [o,o,o,o,o,M,M,M,o,o,o],
-            [o,o,o,M,o,o,o,o,o,o,o],
-            [M,o,o,o,M,o,M,o,o,o,o],
-            [o,o,o,o,M,M,M,M,o,o,o]
-        ]
+# Redo the frequency distribution of alice_in_wonderland.txt and save your result in a dictionary.
 
+filename = "alice_in_wonderland.txt"
+file = open(filename, "r")
+raw = file.read()
+lc_alice = raw.lower()
 
-# print(len(world))
-world2 = [
-        [o,M,o],
-        [o,M,M]
-        ]
+# Variables for testing
+alice_test = raw[0:30]
+lc_alice_test = alice_test.lower()
 
+# Creates a list with every alphabet letter and a count of 0 to start with.
+def alphabet_setup():
+    alphabet_dict = {}
+    for i in range(97,97+26):
+        alphabet_dict[chr(i)] = 0
+    print(alphabet_dict)
+    return alphabet_dict
 
-def print_board(board):
-    board_words = []
-    b = 0
-    for b in range(0,len(board)):
-        r = 0
-        for r in range(0,len(board[b])):
-            print(board[b][r])
-            board_words.append(board[b][r])
-            r = r + 1
-        b = b + 1
-    return board_words
+alphabet_count = alphabet_setup()
+alphabet_count_test = alphabet_setup()
 
-print("Normal board: ")
-print_board(world2)
+# Iterates through entire string and see if each character matches a letter in the alphabet. If there's a match, add a count to that letter in it's list form.
+def check_chr(book, list):
+    letter_count = list
+    for b in book:
+        if bool(letter_count[b]):
+            letter_count[b] = letter_count[b] + 1
+    print(letter_count)
+    return letter_count
 
-# world2_reversed = list(reversed(world2))
-# # list(reversed(list1))
-#
-# print_board(world2_reversed)
-# print("Reversed board 1: ")
-# print(world2[::-1])
-
-# world2_reversed = world2[::-1]
-# world2_row1_reversed = world2_reversed[0][::-1]
-# world2_row2_reversed = world2_reversed[1][::-1]
-#
-#
-# print("Reversed board A: ")
-# print(world2_reversed)
-# print("Reversed board B: ")
-# print(world2_row1_reversed)
-# print(world2_row2_reversed)
-
-def print_board_reverse(board):
-    board_rev = board[::-1]
-    new_board = []
-    b = 0
-    n = 0
-    # creates new reversed board
-    for b in range(0,len(board_rev)):
-        board_rev[b] = board_rev[b][::-1]
-        new_board.append(board_rev[b])
-        b = b + 1
-    # prints new reversed board
-    for n in range(0,len(new_board)):
-        i = 0
-        for i in range(0,len(new_board[n])):
-            print(new_board[n][i])
-            i = i + 1
-        n = n + 1
-    print(new_board)
-    return new_board
-
-print("Reversed board: ")
-print_board_reverse(world2)
+check_chr(lc_alice, alphabet_count)
