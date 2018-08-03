@@ -56,45 +56,45 @@ The keyword planner results for each individual competitor page is available in 
 Follow similar approach to Free Code Camp – combination of storytelling, knowledge sharing.
 
 #### Hosting Suggestion:
-⋅⋅*	Create a Medium 1MWTT blog roll. Medium uses an algorithmic timeline that suggests to its readers what stories they might be interested in. Publishing is very simple, and formatting is difficult to mess up. Posts will always look good.
-⋅⋅*	Medium has a strong DA, so no need to build 1MWTT’s before Google will send traffic there (con, articles published will not contribute as much to 1MWTT’s domain authority.
-⋅⋅*	Company using Medium successfully e.g. FreeCodeCamp uses Medium as their blog platform well. This is their blog home page: https://medium.freecodecamp.org/
+*	Create a Medium 1MWTT blog roll. Medium uses an algorithmic timeline that suggests to its readers what stories they might be interested in. Publishing is very simple, and formatting is difficult to mess up. Posts will always look good.
+*	Medium has a strong DA, so no need to build 1MWTT’s before Google will send traffic there (con, articles published will not contribute as much to 1MWTT’s domain authority.
+*	Company using Medium successfully e.g. FreeCodeCamp uses Medium as their blog platform well. This is their blog home page: https://medium.freecodecamp.org/
 
 #### Writers, editors & writing:
-⋅⋅*	Leverage network and supporters – invite network to submit articles for publication:
-⋅⋅⋅⋅⋅*	Mentors
-⋅⋅⋅⋅⋅*	1MWTT students
-⋅⋅⋅⋅⋅*	Development Professionals
-⋅⋅*	Recruit a group of 5 – 10 volunteer editors willing to review 1 – 2 articles / month, 2 – 4 editors should have good technical knowledge of a couple of coding languages, esp. python and js. Must have strong level of English and a good grasp of coding knowledge useful but not essential (except for quite technical articles).
-⋅⋅*	Provide very clear article guidelines, including language, grammar style, including of images, image alt text, headings etc.
+*	Leverage network and supporters – invite network to submit articles for publication:
+	 * Mentors
+	 * 1MWTT students
+	 * Development Professionals
+*	Recruit a group of 5 – 10 volunteer editors willing to review 1 – 2 articles / month, 2 – 4 editors should have good technical knowledge of a couple of coding languages, esp. python and js. Must have strong level of English and a good grasp of coding knowledge useful but not essential (except for quite technical articles).
+*	Provide very clear article guidelines, including language, grammar style, including of images, image alt text, headings etc.
 
 #### Types of content:
-⋅⋅*	Vary content types: Post several different types of content—lists, feature articles, interviews, etc—and monitored their success. With such a diverse audience, the 1MWTT community will like different types of content.
-⋅⋅*	Storytelling: people working as developers and how they got there, women taking/who have taken the 1mwtt SOC course and want to share their story.
-⋅⋅*	Knowledge sharing: relevant to different levels of knowledge:
-⋅⋅⋅⋅⋅*	High level topics from academics/ experienced developers
-⋅⋅⋅⋅⋅*	How to articles of different levels. Can be written by reasonably inexperienced coders about simple concepts
-⋅⋅⋅⋅⋅*	Interesting applications of programming in real word situations, especially impact focused projects/businesses
-⋅⋅⋅⋅⋅*	Focus on Python and JS – the languages taught in SOC
-⋅⋅*	Publish Longer posts: min 800 words. Thousands of words (within reason) is ok. Many online readers engage deeply with long-form content, so long as it is adding value the entire way!
-⋅⋅*	Share Free resources: As a learning community and because 1MWTT is educational organisation these type of posts will encourage both user engagement and newsletter signups.
+*	Vary content types: Post several different types of content—lists, feature articles, interviews, etc—and monitored their success. With such a diverse audience, the 1MWTT community will like different types of content.
+*	Storytelling: people working as developers and how they got there, women taking/who have taken the 1mwtt SOC course and want to share their story.
+*	Knowledge sharing: relevant to different levels of knowledge:
+	 * High level topics from academics/ experienced developers
+	 * How to articles of different levels. Can be written by reasonably inexperienced coders about simple concepts
+	 * Interesting applications of programming in real word situations, especially impact focused projects/businesses
+	 * Focus on Python and JS – the languages taught in SOC
+*	Publish Longer posts: min 800 words. Thousands of words (within reason) is ok. Many online readers engage deeply with long-form content, so long as it is adding value the entire way!
+*	Share Free resources: As a learning community and because 1MWTT is educational organisation these type of posts will encourage both user engagement and newsletter signups.
 
 
 #### Regularity of posting:
-⋅⋅*	Minimum 1 post / week, up to 1 post per day. Depending on volunteer editor availability.
-⋅⋅*	Leverage current SOC program and invite article submissions from current students and mentors. This one program could generate enough article submissions for 6 months – a year’s supply of content, depending on the regularity of posting.
+*	Minimum 1 post / week, up to 1 post per day. Depending on volunteer editor availability.
+*	Leverage current SOC program and invite article submissions from current students and mentors. This one program could generate enough article submissions for 6 months – a year’s supply of content, depending on the regularity of posting.
 
 #### Article Guidelines:
 1.	As much as possible, have articles scheduled at 4-6 weeks in advance;
 2.	Editorial consistency — Ensure each article goes through an editorial process so each is consistent and meets a publishable standard:
-⋅⋅* Articles should be in English and be carefully checked for grammar, spelling (and coding) errors
-⋅⋅*	Making sure all paragraphs are short and readable
-⋅⋅*	Include article subheadings and ensure they are numbered correctly
-⋅⋅*	Provide a banner image (that is legal to use) for every article
-⋅⋅*	Include approximately 2 image per 200 words, spaced throughout the article. Cite all images and provide alt text and captions where relevant.
-⋅⋅*	Every article should link to other 1MWTT articles, where relevant
-⋅⋅*	All links should be carefully checked
-⋅⋅*	If authors are comfortable, they should include a picture of themselves and a brief bio (no more than 50 words).
+  * Articles should be in English and be carefully checked for grammar, spelling (and coding) errors
+  *	Making sure all paragraphs are short and readable
+  *	Include article subheadings and ensure they are numbered correctly
+  *	Provide a banner image (that is legal to use) for every article
+  *	Include approximately 2 image per 200 words, spaced throughout the article. Cite all images and provide alt text and captions where relevant.
+  *	Every article should link to other 1MWTT articles, where relevant
+  *	All links should be carefully checked
+  *	If authors are comfortable, they should include a picture of themselves and a brief bio (no more than 50 words).
 Possibly allow to include a link to their LinkedIn/GitHub/Portfolio Website?
 
 3.	First-time writers should be supported with a structured process, including article templates, and a review process.
