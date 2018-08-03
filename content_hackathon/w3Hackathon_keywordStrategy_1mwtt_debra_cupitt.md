@@ -87,23 +87,23 @@ Follow similar approach to Free Code Camp – combination of storytelling, knowl
 #### Article Guidelines:
 1.	As much as possible, have articles scheduled at 4-6 weeks in advance;
 2.	Editorial consistency — Ensure each article goes through an editorial process so each is consistent and meets a publishable standard:
-  * Articles should be in English and be carefully checked for grammar, spelling (and coding) errors
-  *	Making sure all paragraphs are short and readable
-  *	Include article subheadings and ensure they are numbered correctly
-  *	Provide a banner image (that is legal to use) for every article
-  *	Include approximately 2 image per 200 words, spaced throughout the article. Cite all images and provide alt text and captions where relevant.
-  *	Every article should link to other 1MWTT articles, where relevant
-  *	All links should be carefully checked
-  *	If authors are comfortable, they should include a picture of themselves and a brief bio (no more than 50 words).
+    * Articles should be in English and be carefully checked for grammar, spelling (and coding) errors
+    *	Making sure all paragraphs are short and readable
+    *	Include article subheadings and ensure they are numbered correctly
+    *	Provide a banner image (that is legal to use) for every article
+    *	Include approximately 2 image per 200 words, spaced throughout the article. Cite all images and provide alt text and captions where relevant.
+    *	Every article should link to other 1MWTT articles, where relevant
+    *	All links should be carefully checked
+    *	If authors are comfortable, they should include a picture of themselves and a brief bio (no more than 50 words).
 Possibly allow to include a link to their LinkedIn/GitHub/Portfolio Website?
 
 3.	First-time writers should be supported with a structured process, including article templates, and a review process.
 
 
 ### Files referenced:
-(1)	non_binary_search_multiTimeline.csv, non_binary_search_geoMap.csv
-(2)	women_coding_search_multiTimeline.csv, women_coding_search_geoMap.csv
-(3)	learn_coding_search_multiTimeline.csv, learn_coding_search_geoMap.csv
-(4)	1mwtt_keywordplanner_comb.xml
-(5)	1mwtt_competitor_research.xlsx
-(6)	competitor_keywords (folder)
+1.	non_binary_search_multiTimeline.csv, non_binary_search_geoMap.csv
+2.	women_coding_search_multiTimeline.csv, women_coding_search_geoMap.csv
+3.	learn_coding_search_multiTimeline.csv, learn_coding_search_geoMap.csv
+4.	1mwtt_keywordplanner_comb.xml
+5.	1mwtt_competitor_research.xlsx
+6.	competitor_keywords (folder)
