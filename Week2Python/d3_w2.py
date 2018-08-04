@@ -49,7 +49,6 @@ s2 = Student("Deb Cupitt", "dcupitt", "Chololate!", "gender equity")
 s3 = Student("Tim Lindley", "tl90", "Pho", "photography")
 
 
-
 def my_iter():
 	for s in Student.students_list:
 	  for attr, value in s.__dict__.items():
