@@ -1,3 +1,59 @@
+function celebrityID () {
+  celebrityID = 999
+  return {
+    getID: function () {
+      return celebrityID
+    },
+    setID: function (newID) {
+      celebrityID = newID
+      return celebrityID
+    }
+  }
+}
+
+mjID = celebrityID()
+console.log(mjID)
+console.log(mjID.getID())
+console.log(mjID.setID(543))
+mjID.setID(2940)
+console.log(mjID.getID())
+
+
+// Hoisting is JavaScript's default behavior of moving declarations to the top.
+// Before the code execution happens, the interpreter goes through the whole
+// program and takes the declarations but NOT the assignments and hoists them
+// to the top so they are always available.
+// let and const are not hoisted.
+// initializations are not hoisted either.
+// e.g.
+
+x = 5
+
+elem = document.getElementById("kasia")
+elem.innerHTML = x
+
+var x
+
+// HW: celebrity id function - how do we fix this loop bug in closures?
+
+function celebrityIDCreator (theCelebrities) {
+  var i
+  for (i = 0; i < theCelebrities.length; i++) {
+    theCelebrities[i]["id"] = function () {
+      var uniqueID = 100
+      return uniqueID + i
+    }()
+  }
+  return theCelebrities
+}
+
+var celebrities = [{name: "Reese Witherspoon", id: 0}, {name: "Sarah Jessica Parker", id: 0}, {name: "Angelina Joile", id: 0}, {name: "Marie Curie", id: 0}, {name: "Priyanka Chopra", id: 0}, {name: "Kate McKinnon", id: 0},
+{name: "Julia Roberts", id: 0}, {name: "Jenniger Aniston", id: 0}, {name: "Malala Yousafzai", id: 0}]
+
+var createIdsForCelebs = celebrityIDCreator(celebrities)
+console.log(createIdsForCelebs)
+
+
 // Modify echo.js to print out each argument to the echo() function on a new line. It should work for an arbitrary number of arguments.
 
 function print () {
