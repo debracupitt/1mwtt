@@ -351,13 +351,145 @@ function printMoo (n) {
 
 printMoo(3)
 
-// Old-school Roman numerals. In the early days of Roman numerals, the Romans didn’t bother with any of this new-fangled subtraction “IX” nonsense.
-// Write a method that when passed an integer between 1 and 3000 (or so) returns a string containing the proper old-school Roman numeral. In other words, old_roman_numeral 4 should return 'IIII'. Make sure to test your method on a bunch of different numbers.
+// Old-school Roman numerals.
+function oldRoman (num) {
+  var i
+  var number = num
+  var remaindar = 0
+  var oldRomanNum = ""
+
+  for (i = 1; i <= parseInt(number/1000); i++) {
+    oldRomanNum += "M"
+  }
+  remaindar = number % 1000
+
+  for (i = 1; i <= parseInt(remaindar / 500); i++) {
+    oldRomanNum += "D"
+  }
+  remaindar = number % 500
+
+  for (i = 1; i <= parseInt(remaindar / 100); i++) {
+    oldRomanNum += "C"
+  }
+  remaindar = number % 100
+
+  for (i = 1; i <= parseInt(remaindar / 50); i++) {
+    oldRomanNum += "L"
+  }
+  remaindar = number % 50
+
+  for (i = 1; i <= parseInt(remaindar / 10); i++) {
+    oldRomanNum += "X"
+  }
+  remaindar = number % 10
+
+  for (i = 1; i <= parseInt(remaindar / 5); i++) {
+    oldRomanNum += "V"
+  }
+  remaindar = number % 5
+
+  for (i = 1; i <= parseInt(remaindar / 1); i++) {
+    oldRomanNum += "I"
+  }
+
+  console.log(oldRomanNum)
+}
 
 
+oldRoman(3642)
+// > MMMDCXXXXII
 
-// “Modern” Roman numerals. Eventually, someone thought it would be terribly clever if putting a smaller number before a larger one meant you had to subtract the smaller one. As a result of this development, you must now suffer. Rewrite your previous method to return the new-style Roman numerals so when someone calls roman_numeral 4, it should return 'IV', 90 should be 'XC' etc.
+oldRoman(964)
+// > DCCCCLXIIII
+
+oldRoman(999)
+// > DCCCCLXXXXVIIII
 
 
+// “Modern” Roman numerals.
+
+function newRoman (num) {
+  var i
+  var number = num
+  var remaindar = 0
+  var newRomanNum = ""
+
+  for (i = 1; i <= parseInt(number/1000); i++) {
+    newRomanNum += "M"
+  }
+  remaindar = number % 1000
+
+  if (remaindar >= 900) {
+    newRomanNum += "CM"
+    remaindar = number % 100
+  } else {
+    for (i = 1; i <= parseInt(remaindar / 500); i++) {
+      newRomanNum += "D"
+    }
+    remaindar = number % 500
+  }
+
+  if (remaindar >= 400) {
+    newRomanNum += "CD"
+    remaindar = number % 100
+  } else {
+    for (i = 1; i <= parseInt(remaindar / 100); i++) {
+      newRomanNum += "C"
+    }
+    remaindar = number % 100
+  }
+
+  if (remaindar >= 90) {
+    newRomanNum += "XC"
+    remaindar = number % 10
+  } else {
+    for (i = 1; i <= parseInt(remaindar / 50); i++) {
+      newRomanNum += "L"
+    }
+    remaindar = number % 50
+  }
+
+  if (remaindar >= 40) {
+    newRomanNum += "XL"
+    remaindar = number % 10
+  } else {
+    for (i = 1; i <= parseInt(remaindar / 10); i++) {
+      newRomanNum += "X"
+    }
+    remaindar = number % 10
+  }
+
+  if (remaindar == 9) {
+    newRomanNum += "IX"
+    remaindar = number % 1
+  } else {
+    for (i = 1; i <= parseInt(remaindar / 5); i++) {
+      newRomanNum += "V"
+    }
+    remaindar = number % 5
+  }
+
+  if (remaindar == 4) {
+    newRomanNum += "IV"
+  } else {
+    for (i = 1; i <= parseInt(remaindar / 1); i++) {
+      newRomanNum += "I"
+    }
+  }
+
+  console.log(newRomanNum)
+}
+
+newRoman(3642)
+// MMMDCXLII
+
+newRoman(964)
+// CM LX IV
+
+newRoman(999)
+// CM XC IX
+
+newRoman(444)
+// CD XL IV
 
 });
