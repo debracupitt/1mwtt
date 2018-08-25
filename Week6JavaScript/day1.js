@@ -1,23 +1,24 @@
+
+
 function celebrityID () {
-  celebrityID = 999
+  var uniqueID = 999
   return {
     getID: function () {
-      return celebrityID
+      return uniqueID
     },
     setID: function (newID) {
-      celebrityID = newID
-      return celebrityID
+      uniqueID = newID
+      return uniqueID
     }
   }
 }
 
-mjID = celebrityID()
+var mjID = celebrityID()
 console.log(mjID)
 console.log(mjID.getID())
 console.log(mjID.setID(543))
 mjID.setID(2940)
 console.log(mjID.getID())
-
 
 // Hoisting is JavaScript's default behavior of moving declarations to the top.
 // Before the code execution happens, the interpreter goes through the whole
@@ -29,7 +30,7 @@ console.log(mjID.getID())
 
 x = 5
 
-elem = document.getElementById("kasia")
+var elem = document.getElementById('kasia')
 elem.innerHTML = x
 
 var x
@@ -39,49 +40,46 @@ var x
 function celebrityIDCreator (theCelebrities) {
   var i
   for (i = 0; i < theCelebrities.length; i++) {
-    theCelebrities[i]["id"] = function () {
+    theCelebrities[i]['id'] = (function () {
       var uniqueID = 100
       return uniqueID + i
-    }()
+    }())
   }
   return theCelebrities
 }
 
-var celebrities = [{name: "Reese Witherspoon", id: 0}, {name: "Sarah Jessica Parker", id: 0}, {name: "Angelina Joile", id: 0}, {name: "Marie Curie", id: 0}, {name: "Priyanka Chopra", id: 0}, {name: "Kate McKinnon", id: 0},
-{name: "Julia Roberts", id: 0}, {name: "Jenniger Aniston", id: 0}, {name: "Malala Yousafzai", id: 0}]
+var celebrities = [{name: 'Reese Witherspoon', id: 0}, {name: 'Sarah Jessica Parker', id: 0}, {name: 'Angelina Joile', id: 0}, {name: 'Marie Curie', id: 0}, {name: 'Priyanka Chopra', id: 0}, {name: 'Kate McKinnon', id: 0},
+  {name: 'Julia Roberts', id: 0}, {name: 'Jenniger Aniston', id: 0}, {name: 'Malala Yousafzai', id: 0}]
 
 var createIdsForCelebs = celebrityIDCreator(celebrities)
 console.log(createIdsForCelebs)
 
-
 // Modify echo.js to print out each argument to the echo() function on a new line. It should work for an arbitrary number of arguments.
 
 function print () {
-  console.log(arguments);
+  console.log(arguments)
 };
 
 function echo () {
-  for(var i = 0; i < arguments.length; i++) {
-	console.log(arguments[i]);
+  for (var i = 0; i < arguments.length; i++) {
+    console.log(arguments[i])
   }
 };
 
-echo();
+echo()
 // should print nothing
 
-echo('bla');
+echo('bla')
 // should print
 //
 // 'bla'
 
-echo('foo', 'bar', 'baz');
+echo('foo', 'bar', 'baz')
 // should print
 //
 // 'foo'
 // 'bar'
 // 'baz'
-
-
 
 // Build a very simple kitchen timer: modify the countdown() function in countdown.js to take a number of seconds, then print each second counting down to zero.
 
@@ -93,17 +91,25 @@ echo('foo', 'bar', 'baz');
 // 0
 
 function countdown (timeSet) {
-  var timeleft = timeSet;
-  var countdownTimer = setInterval(function(){
-    console.log(timeleft);
-    timeleft--;
+  var timeleft = timeSet
+  var countdownTimer = setInterval(function () {
+    console.log(timeleft)
+    timeleft--
     if (timeleft <= 0) {
-      clearInterval(countdownTimer);
+      clearInterval(countdownTimer)
     }
-  },1000);
+  }, 1000)
 
-	var kitchenTimer = window.setTimeout(
-		function(timeSet){
-			console.log("Time's up! " + timeSet + " seconds have passed.")
-		}, (timeSet*1000), timeSet);
+  var kitchenTimer = window.setTimeout(
+    function (timeSet) {
+      console.log('Time\'s up! ' + timeSet + ' seconds have passed.')
+    }, (timeSet * 1000), timeSet)
 }
+
+// jQuery plugin - blink
+(function blink ($) {
+  $.fn.greenify = function () {
+    this.css('color', 'green')
+    return this
+  }
+}(jQuery))

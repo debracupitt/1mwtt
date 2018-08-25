@@ -97,7 +97,7 @@ print_contents(scrum_contents)
 
 # ================ DAY 4 HOMEWORK - Loops & Lists ================ #
 
-# “99 Bottles of Beer on the Wall.” Write a program that prints out the lyrics to that beloved classic, “99 Bottles of Beer on the Wall.”
+# “99 Bottles of Beer on the Wall.”
 
 for b in range (99,1,-1):
     print(str(b) + " bottles of beer on the wall, " + str(b) + " bottles of beer. Take one down and pass it around, " + str(b) + " bottles of beer on the wall.")
@@ -109,11 +109,9 @@ print("No more bottles of beer on the wall, no more bottles of beer. Go to the s
 
 # ----------------------------------------------------------------------------------------------
 
-# Deaf grandma. Whatever you say to Grandma (whatever you type in), she should respond with this: HUH?! SPEAK UP, GIRL! Unless you shout it (type in all capitals). If you shout, she can hear you (or at least she thinks so) and yells back:
+# Deaf grandma.
 
 import random
-
-
 
 def grandma_convo(num):
     year = str(random.randrange(1930, 1950))
@@ -134,10 +132,9 @@ def grandma_convo(num):
 
 grandma_convo(0)
 
-
 # ----------------------------------------------------------------------------------------------
 
-# Leap years. Write a program that asks for a starting year and an ending year and then puts all the leap years between them (and including them, if they are also leap years). Leap years are years divisible by 4 (like 1984 and 2004). However, years divisible by 100 are not leap years (such as 1800 and 1900) unless they are also divisible by 400 (such as 1600 and 2000, which were in fact leap years). What a mess!
+# Leap years.
 
 def leap_year_calc(start_yr, end_yr):
     for y in range(int(start_yr), int(end_yr)):
@@ -156,7 +153,7 @@ leap_year_calc(starting_point, ending_point)
 
 # ----------------------------------------------------------------------------------------------
 
-# Find something today in your life, that is a calculation. Go for a walk, look around the park, try to count something. Anything! And write a program about it. estimate your books by bookshelf
+# Find something today in your life, that is a calculation. Estimate your books by bookshelf
 
 def books_bookshelf(bookshelves_num):
     books = int(bookshelves_num) * 200
@@ -169,7 +166,7 @@ print("Based on this number, I predict you have approximately " + str(books_book
 
 # ----------------------------------------------------------------------------------------------
 
-# Building and sorting an array. Write the program that asks us to type as many words as we want (one word per line, continuing until we just press Enter on an empty line) and then repeats the words back to us in alphabetical order. Make sure to test your program thoroughly; for example, does hitting Enter on an empty line always exit your program? Even on the first line? And the second?
+# Building and sorting an array.
 
 def print_words(new_words_list):
     words_list = new_words_list
