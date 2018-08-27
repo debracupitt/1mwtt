@@ -1,4 +1,4 @@
-
+// Day 1 Class Activities
 
 function celebrityID () {
   var uniqueID = 999
@@ -27,16 +27,14 @@ console.log(mjID.getID())
 // let and const are not hoisted.
 // initializations are not hoisted either.
 // e.g.
-
 x = 5
 
-var elem = document.getElementById('kasia')
+var elem = document.getElementById('num')
 elem.innerHTML = x
 
 var x
 
 // HW: celebrity id function - how do we fix this loop bug in closures?
-
 function celebrityIDCreator (theCelebrities) {
   var i
   for (i = 0; i < theCelebrities.length; i++) {
@@ -55,7 +53,6 @@ var createIdsForCelebs = celebrityIDCreator(celebrities)
 console.log(createIdsForCelebs)
 
 // Modify echo.js to print out each argument to the echo() function on a new line. It should work for an arbitrary number of arguments.
-
 function print () {
   console.log(arguments)
 };
@@ -67,29 +64,11 @@ function echo () {
 };
 
 echo()
-// should print nothing
-
 echo('bla')
-// should print
-//
-// 'bla'
-
 echo('foo', 'bar', 'baz')
-// should print
-//
-// 'foo'
-// 'bar'
-// 'baz'
+
 
 // Build a very simple kitchen timer: modify the countdown() function in countdown.js to take a number of seconds, then print each second counting down to zero.
-
-// countdown(3);
-// should print
-// 3...
-// 2...
-// 1...
-// 0
-
 function countdown (timeSet) {
   var timeleft = timeSet
   var countdownTimer = setInterval(function () {
@@ -106,10 +85,19 @@ function countdown (timeSet) {
     }, (timeSet * 1000), timeSet)
 }
 
+
+
 // jQuery plugin - blink
-(function blink ($) {
-  $.fn.greenify = function () {
-    this.css('color', 'green')
+
+(function ($) {
+  $.fn.blink = function (speed) {
+    var t = this
+    var interval = setInterval(function (speed){
+      t.fadeOut(speed).fadeIn(speed)
+    }, 1000, speed);
     return this
   }
-}(jQuery))
+} (jQuery) )
+
+$('#lightbulb').blink(1000)
+// $('div').blink(200)

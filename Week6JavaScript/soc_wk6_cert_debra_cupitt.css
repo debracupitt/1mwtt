@@ -1,0 +1,13 @@
+html {
+  background-color: #FFB7D9;
+  color: #402E36;
+  font-family: 'Raleway', sans-serif;
+}
+td {
+  padding-right: 40px;
+}
+#lightbulb {
+  width: 30%;
+  margin: auto;
+  display: block;
+}
