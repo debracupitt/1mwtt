@@ -332,7 +332,6 @@ wld_sz_fnl = check_sz(world_size_input)
 world = create_wld(wld_sz_fnl)
 
 x_coordinate = int(input('What "x" coordinate would you like to land on? You must choose a number between 0 and ' + str(wld_sz_fnl) + ":  "))
-print(x_coordinate)
 
 def check_x(wld_sz, x):
     while x < 0 or x > wld_sz:
@@ -340,10 +339,8 @@ def check_x(wld_sz, x):
     return x
 
 x_fnl = check_x(wld_sz_fnl, x_coordinate)
-print(x_fnl)
 
 y_coordinate = int(input('What "y" coordinate would you like to land on? You must choose a number between 0 and ' + str(wld_sz_fnl) + ":  "))
-print(y_coordinate)
 
 def check_y(wld_sz, y):
     while y < 0 or y > wld_sz:
@@ -351,10 +348,8 @@ def check_y(wld_sz, y):
     return y
 
 y_fnl = check_y(wld_sz_fnl, y_coordinate)
-print(y_fnl)
 
 def continent_counter(world, x, y):
-    #print(str(x) + str(y) + str(a) + str(b))
     if x >= len(world) or x < 0 or y >= len(world) or y < 0:
         return 0
     if world[y][x] != 'land':
