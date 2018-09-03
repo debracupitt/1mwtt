@@ -1,0 +1,19 @@
+html {
+  background-color: #FFB7D9;
+  color: #402E36;
+  font-family: 'Raleway', sans-serif;
+}
+td {
+  padding-right: 40px;
+}
+
+button {
+  padding: 5px;
+  border: solid #402E36;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
