@@ -56,7 +56,6 @@ print("If I add %d, %d, and %d I get %d." % (my_age, my_height, my_weight, my_ag
 # Make a function that prints A-Z & a-z
 
 print(chr(65))
-# > 'A'
 def print_alphabet():
     for i in range(65,65+26):
         print(i, " stands for ", chr(i))
@@ -197,7 +196,6 @@ wld_sz_fnl = check_sz(world_size_input)
 civIII_world = create_wld(wld_sz_fnl)
 
 x_coordinate = int(input('What "x" coordinate would you like to land on? You must choose a number between 0 and ' + str(wld_sz_fnl) + ":  "))
-print(x_coordinate)
 
 def check_x(wld_sz, x):
     while x < 0 or x > wld_sz:
@@ -205,10 +203,8 @@ def check_x(wld_sz, x):
     return x
 
 x_fnl = check_x(wld_sz_fnl, x_coordinate)
-print(x_fnl)
 
 y_coordinate = int(input('What "y" coordinate would you like to land on? You must choose a number between 0 and ' + str(wld_sz_fnl) + ":  "))
-print(y_coordinate)
 
 def check_y(wld_sz, y):
     while y < 0 or y > wld_sz:
@@ -216,7 +212,6 @@ def check_y(wld_sz, y):
     return y
 
 y_fnl = check_y(wld_sz_fnl, y_coordinate)
-print(y_fnl)
 
 def continent_counter(world, x, y):
     if x >= len(world) or x < 0 or y >= len(world) or y < 0:
@@ -410,4 +405,4 @@ print(harriet.__dict__)
 
 # Compare the lexical diversity scores for humor and romance fiction in 1.1. Which genre is more lexically diverse?
 
-## >>> See
+## >>> See lexical_div_hw_notebook.ipynb
